@@ -1,6 +1,6 @@
 import mariadb from 'mariadb';
 
-require('dotenv').config({ path: '/workspace/poongdeong/server/src/.env' });
+require('dotenv').config();
 
 const pool = mariadb.createPool({
   host: process.env.DBHOST,

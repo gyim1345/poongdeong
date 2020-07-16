@@ -7,7 +7,7 @@
     "start": "nodemon --exec babel-node src/server.js",
     "lint": "eslint \"src/**/*.js\"",
     "build": "babel src/ --out-dir dist --delete-dir-on-start --ignore \"**/*.test.js\"",
-    "test": "jest"
+    "test": "jest --runInBand --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
